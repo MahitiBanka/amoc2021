@@ -1,16 +1,1 @@
-# amoc
-
-A new Flutter application.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This application would help people from every remote corner of the country to get in touch with good health care which is their fundamental right and also educate them about different diseases and treatments alongside. They would be able to consult professional doctors, buy medicines as well as lab tests.Users can sign in and sign up.
