@@ -39,6 +39,94 @@ class CommonDiseases extends StatelessWidget {
               end: Alignment.topRight,
               colors: [Color(0xff71e1de), Color(0x0071e1de)],
             ),
+<<<<<<< HEAD
+=======
+          ),
+        ),
+      ),
+      body: SafeArea(
+        child: Container(
+          width: 411 * Width,
+          height: 731 * Height,
+          color: Color(0xff5fb1df),
+          child: Stack(
+            children: [
+              Positioned.fill(
+                child: Align(
+                  alignment: Alignment.topLeft,
+                  child: Container(
+                    width: 411 * Width,
+                    height: 637 * Height,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(0),
+                        topRight: Radius.circular(0),
+                        bottomLeft: Radius.circular(500),
+                        bottomRight: Radius.circular(0),
+                      ),
+                      gradient: LinearGradient(
+                        begin: Alignment.bottomLeft,
+                        end: Alignment.topRight,
+                        colors: [Color(0xff71e1de), Color(0x0071e1de)],
+                      ),
+                    ),
+                    child: GridView.count(
+                      physics: ScrollPhysics(),
+                      shrinkWrap: true,
+                      // padding: EdgeInsets.only(bottom: 30,left: 30),
+                      crossAxisCount: 2,
+                      children: [
+                        ...Diss.map(
+                          (i) => Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Padding(padding: EdgeInsets.only(top: 20)),
+                              diseaseContainer(
+                                width: 120,
+                                height: 110,
+                                mssg: i,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    // ListView(
+                    //   children: [
+                    //     Padding(padding: EdgeInsets.only(top: 20)),
+                    //     ...Diss.map(
+                    //       (i) => Column(
+                    //         mainAxisSize: MainAxisSize.min,
+                    //         children: [
+                    //           diseaseContainer(i),
+                    //         ],
+                    //       ),
+                    //     ),
+                    //   ],
+                    //   // children: [
+                    //   //   // TextField(
+                    //   //   //   decoration: InputDecoration(
+                    //   //   //     border:
+                    //   //   //   ),),
+                    //   //   diseaseContainer(),
+                    //   //   diseaseContainer(),
+                    //   //   diseaseContainer(),
+                    //   //   diseaseContainer(),
+                    //   //   diseaseContainer(),
+                    //   //   diseaseContainer(),
+                    //   //   diseaseContainer(),
+                    //   //   diseaseContainer(),
+                    //   //   diseaseContainer(),
+                    //   //   diseaseContainer(),
+                    //   //   diseaseContainer(),
+                    //   //   diseaseContainer(),
+                    //   // ],
+                    // ),
+                  ),
+                ),
+              ),
+            ],
+>>>>>>> 1ed3294db3d0189cff4b0e3ef626b1cf1f397dc3
           ),
         ),
       ),

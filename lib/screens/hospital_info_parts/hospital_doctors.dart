@@ -133,6 +133,7 @@ class _HospitalDoctorsState extends State<HospitalDoctors> {
                 colors: [Color(0xff71e1de), Color(0x0071e1de)],
               ),
             ),
+<<<<<<< HEAD
             child: ListView.builder(
                 itemCount: widget.di.length,
                 itemBuilder: (context, index) {
@@ -143,6 +144,21 @@ class _HospitalDoctorsState extends State<HospitalDoctors> {
                     degr: widget.deg[index],
                   );
                 }),
+=======
+            child: ListView(
+              children: [
+                Padding(padding: EdgeInsets.only(top: 20)),
+                ...widget.di.map(
+                  (i) => Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      DoctorContainer(doctor: i),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+>>>>>>> 1ed3294db3d0189cff4b0e3ef626b1cf1f397dc3
           ),
         ],
       ),

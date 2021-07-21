@@ -133,6 +133,7 @@ class _DoctorsSpecState extends State<DoctorsSpec> {
                 colors: [Color(0xff71e1de), Color(0x0071e1de)],
               ),
             ),
+<<<<<<< HEAD
             child: ListView.builder(
                 itemCount: widget.di.length,
                 itemBuilder: (context, index) {
@@ -156,6 +157,21 @@ class _DoctorsSpecState extends State<DoctorsSpec> {
             //     ),
             //   ],
             // ),
+=======
+            child: ListView(
+              children: [
+                Padding(padding: EdgeInsets.only(top: 20)),
+                ...widget.di.map(
+                  (i) => Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      DoctorContainer(doctor: i),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+>>>>>>> 1ed3294db3d0189cff4b0e3ef626b1cf1f397dc3
           ),
         ],
       ),

@@ -33,6 +33,7 @@ class _TreatmentState extends State<Treatment> {
       print(value.data()["Treatments"]);
       setState(() {
         widget.overviewData = value.data()["Treatments"];
+<<<<<<< HEAD
         if (widget.overviewData == null)
           widget.overviewData = value.data()["Treatment"];
         //if(widget.overviewData==null)
@@ -42,6 +43,13 @@ class _TreatmentState extends State<Treatment> {
         //   widget.first.add(e.key);
         //   widget.second.add(e.value);
         // }
+=======
+        for (MapEntry e in widget.overviewData.entries) {
+          //print("Key ${e.key}, Value ${e.value}");
+          widget.first.add(e.key);
+          widget.second.add(e.value);
+        }
+>>>>>>> 1ed3294db3d0189cff4b0e3ef626b1cf1f397dc3
         //overviewData = overviewData +
         //"hjhslgrs gshglksrg hh giowherg htioghw thow hghuhghogh 0ghoir hgi ih ihgiohgirhghiorhgio hiohri ghriogh oiri hgroghioh gdr hd hdh thth gh dghdgj dgn dgjfgj dgn dghj dgth dg tdj dg dg g jg fn gdn g j j dg ndg j dg dg n gd j dtj dg jd g  j gj d  g j tr jd g dg n dgj  j rt j gf ng f fjg j j  f j fg nfg j f j yj f gn jgfn";
       });
@@ -110,7 +118,7 @@ class _TreatmentState extends State<Treatment> {
                 child:
                     //ListView(
                     ListView.builder(
-                        itemCount: widget.overviewData.length,
+                        itemCount: widget.first.length,
                         itemBuilder: (context, index) {
                           return Roww(
                             mssg: widget.overviewData[index],
